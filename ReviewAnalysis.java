@@ -15,6 +15,10 @@ public class ReviewAnalysis
 
     ArrayList<String> comments = new ArrayList<String>();
     public ArrayList<String> collectComments(){
-
+        String[] comments = {};
+        for ()
+        String[] exclaims = {};
+        boolean containsExclaim = false;
+        for (String c:)
     }
 }
