@@ -15,10 +15,12 @@ public class ReviewAnalysis
 
     ArrayList<String> comments = new ArrayList<String>();
     public ArrayList<String> collectComments(){
-        String[] comments = {};
-        for ()
-        String[] exclaims = {};
-        boolean containsExclaim = false;
-        for (String c:)
+        ArrayList<String> exclaims = new ArrayList<>();
+        for (int i = 0; i < allReviews.length; i++){
+            String c = allReviews[i].getComment();
+            if (c.substring(c.length()-1) != "." && c.substring(c.length()-1) != "!") c += ".";
+            if (c.indexOf("i") > 0) exclaims.add(i + "-" + c);
+        }
+        return exclaims;
     }
 }
